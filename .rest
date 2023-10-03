@@ -1,0 +1,48 @@
+## Get all
+GET http://localhost:3000/products
+
+
+### Get one by ID
+GET http://localhost:3000/products/6517491f7fe15d32d5acc30c
+
+### Create new product
+POST http://localhost:3000 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "tie-dye shirt",
+    "brand": "hanes",
+    "quantity": "45",
+    "sku": "5426554565",
+    "color": "pink",
+    "size": "xxl",
+    "category": "shirts"
+}
+
+# {
+#     "_id": "6517491f7fe15d32d5acc30c",
+#     "name": "wooden bowl",
+#     "brand": "jay's woods",
+#     "quantity": "3",
+#     "sku": "1254356",
+#     "color": "brown",
+#     "size": "medium",
+#     "category": "bowls"
+#   }
+
+### Update
+PUT POST http://localhost:3000/products/6517491f7fe15d32d5acc30c HTTP/1.1
+
+{
+    "name": "tie-dye shirt",
+    "brand": "hanes",
+    "quantity": "45",
+    "sku": "5426554565",
+    "color": "pin k",
+    "size": "xxl",
+    "category": "shirts"
+}
+
+### Delete
+DELETE http://localhost:3000/products/6517491f7fe15d32d5acc30c HTTP/1.1
+
